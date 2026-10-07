@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: white;
+    color: #222;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Dark Mode */
+
+body.dark {
+    background: #222;
+    color: white;
+}
+
+body.dark .container {
+    background: #333;
+}
+
+body.dark button {
+    background: white;
+    color: #222;
+}
